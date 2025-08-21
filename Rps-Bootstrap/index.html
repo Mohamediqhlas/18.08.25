@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rock Paper Scissors</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #355c82;
+    }
+    .choice {
+      font-size: 2.5rem;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .choice:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body class="d-flex justify-content-center align-items-center vh-100">
+
+  <div class="card text-center shadow-lg p-4" style="max-width: 420px; width: 100%;">
+    <h1 class="h4 mb-2">Rock Paper Scissors</h1>
+    <p class="text-muted">- Mohamed Iqhlas</p>
+
+    <!-- Choices -->
+    <div class="d-flex justify-content-around mb-3">
+      <div class="choice bg-light rounded-circle p-3" onclick="playGame('rock')">✊</div>
+      <div class="choice bg-light rounded-circle p-3" onclick="playGame('paper')">✋</div>
+      <div class="choice bg-light rounded-circle p-3" onclick="playGame('scissors')">✌</div>
+    </div>
+
+    <!-- Result -->
+    <div id="result" class="fs-5 fw-bold mb-3">-</div>
+
+    <!-- User & Computer choices -->
+    <div class="row mb-3">
+      <div class="col border rounded py-2" id="user-choice">You: </div>
+      <div class="col border rounded py-2" id="computer-choice">Computer: </div>
+    </div>
+
+    <!-- Scoreboard -->
+    <div class="row text-center mb-3">
+      <div class="col border rounded py-2">Wins: <span id="wins">0</span></div>
+      <div class="col border rounded py-2">Losses: <span id="losses">0</span></div>
+      <div class="col border rounded py-2">Ties: <span id="ties">0</span></div>
+    </div>
+
+    <!-- Reset button -->
+    <button class="btn btn-primary w-100" onclick="resetGame()">Reset</button>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    let wins = 0;
+    let losses = 0;
+    let ties = 0;
+
+    function playGame(userChoice) {
+      const choices = ['rock', 'paper', 'scissors'];
+      const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+
+      document.getElementById('user-choice').innerText = 'You: ' + getEmoji(userChoice);
+      document.getElementById('computer-choice').innerText = 'Computer: ' + getEmoji(computerChoice);
+
+      if (userChoice === computerChoice) {
+        ties++;
+        document.getElementById('result').innerText = "It's a Tie!";
+      } else if (
+        (userChoice === 'rock' && computerChoice === 'scissors') ||
+        (userChoice === 'paper' && computerChoice === 'rock') ||
+        (userChoice === 'scissors' && computerChoice === 'paper')
+      ) {
+        wins++;
+        document.getElementById('result').innerText = "You Win!";
+      } else {
+        losses++;
+        document.getElementById('result').innerText = "You Lose!";
+      }
+
+      updateScore();
+    }
+
+    function getEmoji(choice) {
+      switch (choice) {
+        case 'rock': return '✊';
+        case 'paper': return '✋';
+        case 'scissors': return '✌';
+      }
+    }
+
+    function updateScore() {
+      document.getElementById('wins').innerText = wins;
+      document.getElementById('losses').innerText = losses;
+      document.getElementById('ties').innerText = ties;
+    }
+
+    function resetGame() {
+      wins = 0;
+      losses = 0;
+      ties = 0;
+      updateScore();
+      document.getElementById('result').innerText = '-';
+      document.getElementById('user-choice').innerText = 'You: ';
+      document.getElementById('computer-choice').innerText = 'Computer: ';
+    }
+  </script>
+</body>
+</html>
