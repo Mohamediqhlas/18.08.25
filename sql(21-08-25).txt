@@ -1,0 +1,39 @@
+show databases;
+use sathyabama;
+CREATE TABLE students (
+    student_id INT PRIMARY KEY,
+    sname VARCHAR(50),
+    age INT,
+    course VARCHAR(50),
+    grade VARCHAR(5)
+);
+DESC students;
+INSERT INTO students (student_id, sname, age, course, grade)
+VALUES
+(1, 'Hope', 20, 'Depression', 'A'),
+(2, 'Priya', 21, 'cse', 'B'),
+(3, 'Karthik', 22, 'cse', 'C'),
+(4, 'Asin', 19, 'AI & ML', 'A'),
+(5, 'Iqhlas', 20, 'AI & Robotics', 'A');
+SELECT * FROM students;
+UPDATE students
+SET grade = 'A+'
+WHERE student_id = 3;
+ALTER TABLE students
+ADD email VARCHAR(100);
+ALTER TABLE students
+MODIFY course VARCHAR(100);
+ALTER TABLE students
+RENAME COLUMN grade TO result;
+DELETE FROM students
+WHERE student_id = 1;
+select * from students;
+
+
+
+
+
+
+
+
+
