@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Iqhlas A - AI & Robotics Engineer</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#home">Mohamed Iqhlas A</a>
+            <div class="d-flex align-items-center">
+                <button class="btn btn-outline-primary btn-sm me-2" onclick="toggleTheme()">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-7">
+                    <h1 class="display-4 fw-bold mb-3">
+                        Hi, I'm <span class="text-primary">Mohamed Iqhlas A</span>
+                    </h1>
+                    <h4 class="text-muted mb-4">AI & Robotics Engineer | Computer Science Student</h4>
+                    <p class="lead mb-4">
+                        Passionate about intelligent systems, robotics, and automation. Currently pursuing 
+                        Computer Science Engineering with AI & Robotics specialization, building innovative 
+                        solutions for surveillance and e-commerce systems.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#contact" class="btn btn-primary btn-lg">
+                            <i class="fas fa-envelope me-2"></i>Get In Touch
+                        </a>
+                        <a href="images/resume.pdf" class="btn btn-outline-primary btn-lg" download="Mohamed_Iqhlas_Resume.pdf">
+                            <i class="fas fa-download me-2"></i>Download Resume
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <div class="profile-image-container">
+                        <img src="images/profile.jpg" 
+                             alt="Mohamed Iqhlas A" class="profile-image">
+                        <div class="status-indicator">
+                            <i class="fas fa-circle text-success"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Specializing in AI & Robotics</h2>
+                    <p class="mb-4">
+                        I'm currently pursuing a Bachelor of Engineering in Computer Science and Engineering 
+                        with specialization in Artificial Intelligence and Robotics at Sathyabama Institute 
+                        of Science and Technology, maintaining a 9.1 CGPA.
+                    </p>
+                    <p class="mb-4">
+                        My passion lies in intelligent systems, robotics, and automation. I have intermediate 
+                        skills in Python programming and enjoy working on projects that combine machine learning, 
+                        robotics, and drone technology to solve real-world problems.
+                    </p>
+                    <p class="mb-4">
+                        When I'm not studying or coding, you can find me working on my surveillance startup project, 
+                        exploring new AI tools or experimenting with drone engineering and robotics innovations.
+                    </p>
+                    <div class="stats-container">
+                        <div class="row text-center">
+                            <div class="col-6">
+                                <div class="stat-item">
+                                    <h3 class="text-primary fw-bold">9.1</h3>
+                                    <p class="text-muted">CGPA</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stat-item">
+                                    <h3 class="text-primary fw-bold">5+</h3>
+                                    <p class="text-muted">Certifications</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-image-container">
+                        <svg width="100%" height="400" viewBox="0 0 600 400" class="about-image">
+                            <defs>
+                                <linearGradient id="aboutGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#007bff;stop-opacity:0.1" />
+                                    <stop offset="100%" style="stop-color:#007bff;stop-opacity:0.3" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="100%" height="100%" fill="url(#aboutGrad)" rx="15"/>
+                            <!-- Computer/Laptop -->
+                            <rect x="150" y="120" width="300" height="180" fill="#2c3e50" rx="10"/>
+                            <rect x="160" y="130" width="280" height="150" fill="#34495e" rx="5"/>
+                            <rect x="170" y="140" width="260" height="130" fill="#ecf0f1" rx="3"/>
+                            <!-- Screen content -->
+                            <rect x="180" y="150" width="100" height="8" fill="#007bff" rx="2"/>
+                            <rect x="180" y="165" width="150" height="6" fill="#bdc3c7" rx="1"/>
+                            <rect x="180" y="175" width="120" height="6" fill="#bdc3c7" rx="1"/>
+                            <rect x="180" y="190" width="200" height="40" fill="#007bff" opacity="0.2" rx="3"/>
+                            <!-- AI/Robotics elements -->
+                            <circle cx="100" cy="200" r="40" fill="#28a745" opacity="0.3"/>
+                            <circle cx="100" cy="200" r="25" fill="#28a745" opacity="0.5"/>
+                            <circle cx="100" cy="200" r="10" fill="#28a745"/>
+                            <circle cx="500" cy="200" r="35" fill="#ffc107" opacity="0.3"/>
+                            <circle cx="500" cy="200" r="20" fill="#ffc107" opacity="0.5"/>
+                            <circle cx="500" cy="200" r="8" fill="#ffc107"/>
+                            <!-- Connecting lines -->
+                            <line x1="140" y1="200" x2="150" y2="200" stroke="#007bff" stroke-width="3"/>
+                            <line x1="450" y1="200" x2="465" y2="200" stroke="#007bff" stroke-width="3"/>
+                            <!-- Tech icons -->
+                            <text x="300" y="350" text-anchor="middle" fill="#007bff" font-size="24" font-weight="bold">AI & Robotics</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="mb-3">My Skills</h2>
+                <p class="text-muted">Technologies and tools I work with</p>
+            </div>
+            <div class="row">
+                <!-- Programming Skills -->
+                <div class="col-lg-4 mb-4">
+                    <div class="skill-category">
+                        <div class="skill-icon text-primary mb-3">
+                            <i class="fas fa-code fa-2x"></i>
+                        </div>
+                        <h4 class="mb-3">Programming</h4>
+                        
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Python</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" data-width="70"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>HTML/CSS</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" data-width="80"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>C++</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" data-width="60"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Node.js</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" data-width="50"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI & Robotics Skills -->
+                <div class="col-lg-4 mb-4">
+                    <div class="skill-category">
+                        <div class="skill-icon text-success mb-3">
+                            <i class="fas fa-robot fa-2x"></i>
+                        </div>
+                        <h4 class="mb-3">AI & Robotics</h4>
+                        
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Machine Learning</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" data-width="65"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Robotics</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" data-width="70"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Drone Technology</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" data-width="75"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>AI Tools</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" data-width="60"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Others -->
+                <div class="col-lg-4 mb-4">
+                    <div class="skill-category">
+                        <div class="skill-icon text-warning mb-3">
+                            <i class="fas fa-tools fa-2x"></i>
+                        </div>
+                        <h4 class="mb-3">Tools & Others</h4>
+                        
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Git</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" data-width="60"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Microsoft Azure</span>
+                                <span>45%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" data-width="45"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item mb-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Team Management</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="mb-3">Featured Projects</h2>
+                <p class="text-muted">Some of my recent work and ongoing projects</p>
+            </div>
+            <div class="row">
+                <!-- Smart Surveillance System -->
+                <div class="col-lg-4 mb-4">
+                    <div class="project-card h-100">
+                        <svg width="100%" height="200" viewBox="0 0 400 200" class="project-image">
+                            <defs>
+                                <linearGradient id="survGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#007bff;stop-opacity:0.8" />
+                                    <stop offset="100%" style="stop-color:#0056b3;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="100%" height="100%" fill="url(#survGrad)"/>
+                            <!-- Camera icons -->
+                            <circle cx="80" cy="60" r="25" fill="#fff" opacity="0.9"/>
+                            <circle cx="80" cy="60" r="15" fill="#333"/>
+                            <circle cx="80" cy="60" r="8" fill="#007bff"/>
+                            <circle cx="320" cy="60" r="25" fill="#fff" opacity="0.9"/>
+                            <circle cx="320" cy="60" r="15" fill="#333"/>
+                            <circle cx="320" cy="60" r="8" fill="#007bff"/>
+                            <!-- AI brain -->
+                            <circle cx="200" cy="100" r="40" fill="#fff" opacity="0.9"/>
+                            <path d="M170,100 Q200,70 230,100 Q200,130 170,100" fill="#28a745"/>
+                            <!-- Connection lines -->
+                            <line x1="105" y1="60" x2="160" y2="90" stroke="#fff" stroke-width="3"/>
+                            <line x1="295" y1="60" x2="240" y2="90" stroke="#fff" stroke-width="3"/>
+                            <text x="200" y="180" text-anchor="middle" fill="#fff" font-size="16" font-weight="bold">Smart Surveillance</text>
+                        </svg>
+                        <div class="project-content">
+                            <h5 class="project-title">Smart Surveillance System</h5>
+                            <p class="project-description">
+                                An intelligent surveillance startup project utilizing AI and machine learning for real-time detection and automated alerts. Currently under development with focus on robotics integration.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">AI/ML</span>
+                                <span class="tag">Robotics</span>
+                                <span class="tag">Computer Vision</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-primary btn-sm" disabled>
+                                    <i class="fas fa-eye me-1"></i>Live Demo
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm" disabled>
+                                    <i class="fab fa-github me-1"></i>Code
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drone Engineering Projects -->
+                <div class="col-lg-4 mb-4">
+                    <div class="project-card h-100">
+                        <svg width="100%" height="200" viewBox="0 0 400 200" class="project-image">
+                            <defs>
+                                <linearGradient id="droneGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#28a745;stop-opacity:0.8" />
+                                    <stop offset="100%" style="stop-color:#1e7e34;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="100%" height="100%" fill="url(#droneGrad)"/>
+                            <!-- Drone body -->
+                            <ellipse cx="200" cy="100" rx="60" ry="20" fill="#fff" opacity="0.9"/>
+                            <ellipse cx="200" cy="100" rx="40" ry="12" fill="#333"/>
+                            <!-- Propellers -->
+                            <circle cx="140" cy="70" r="20" fill="#fff" opacity="0.7"/>
+                            <circle cx="260" cy="70" r="20" fill="#fff" opacity="0.7"/>
+                            <circle cx="140" cy="130" r="20" fill="#fff" opacity="0.7"/>
+                            <circle cx="260" cy="130" r="20" fill="#fff" opacity="0.7"/>
+                            <!-- Arms -->
+                            <line x1="160" y1="90" x2="140" y2="70" stroke="#333" stroke-width="4"/>
+                            <line x1="240" y1="90" x2="260" y2="70" stroke="#333" stroke-width="4"/>
+                            <line x1="160" y1="110" x2="140" y2="130" stroke="#333" stroke-width="4"/>
+                            <line x1="240" y1="110" x2="260" y2="130" stroke="#333" stroke-width="4"/>
+                            <!-- Flight path -->
+                            <path d="M50,160 Q200,140 350,160" stroke="#fff" stroke-width="2" stroke-dasharray="5,5" fill="none"/>
+                            <text x="200" y="180" text-anchor="middle" fill="#fff" font-size="16" font-weight="bold">Drone Engineering</text>
+                        </svg>
+                        <div class="project-content">
+                            <h5 class="project-title">Drone Engineering Projects</h5>
+                            <p class="project-description">
+                                Various drone technology projects including autonomous navigation, surveillance applications, and robotics integration. Leveraging AI for intelligent flight planning and data collection.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Drone Tech</span>
+                                <span class="tag">AI</span>
+                                <span class="tag">Robotics</span>
+                                <span class="tag">Automation</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-primary btn-sm" disabled>
+                                    <i class="fas fa-eye me-1"></i>Live Demo
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm" disabled>
+                                    <i class="fab fa-github me-1"></i>Code
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Website -->
+                <div class="col-lg-4 mb-4">
+                    <div class="project-card h-100">
+                        <svg width="100%" height="200" viewBox="0 0 400 200" class="project-image">
+                            <defs>
+                                <linearGradient id="webGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#6f42c1;stop-opacity:0.8" />
+                                    <stop offset="100%" style="stop-color:#4c2a85;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="100%" height="100%" fill="url(#webGrad)"/>
+                            <!-- Browser window -->
+                            <rect x="50" y="40" width="300" height="120" fill="#fff" opacity="0.95" rx="8"/>
+                            <rect x="50" y="40" width="300" height="25" fill="#333" rx="8 8 0 0"/>
+                            <circle cx="65" cy="52" r="4" fill="#ff5f57"/>
+                            <circle cx="80" cy="52" r="4" fill="#ffbd2e"/>
+                            <circle cx="95" cy="52" r="4" fill="#28ca42"/>
+                            <!-- Website content -->
+                            <rect x="70" y="80" width="60" height="8" fill="#007bff" rx="2"/>
+                            <rect x="70" y="95" width="100" height="5" fill="#6c757d" rx="1"/>
+                            <rect x="70" y="105" width="80" height="5" fill="#6c757d" rx="1"/>
+                            <rect x="200" y="80" width="120" height="60" fill="#007bff" opacity="0.1" rx="5"/>
+                            <rect x="210" y="90" width="100" height="40" fill="#007bff" opacity="0.3" rx="3"/>
+                            <!-- Code symbols -->
+                            <text x="200" y="175" text-anchor="middle" fill="#fff" font-size="16" font-weight="bold">Portfolio Website</text>
+                        </svg>
+                        <div class="project-content">
+                            <h5 class="project-title">Portfolio Website</h5>
+                            <p class="project-description">
+                                A modern, responsive portfolio website showcasing skills, projects, and experience in AI & Robotics. Built with contemporary web technologies and featuring dark/light theme support.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Flask</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Bootstrap</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">Responsive Design</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="fas fa-eye me-1"></i>Live Demo
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm" disabled>
+                                    <i class="fab fa-github me-1"></i>Code
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- E-Commerce Platform -->
+                <div class="col-lg-4 mb-4">
+                    <div class="project-card h-100">
+                        <svg width="100%" height="200" viewBox="0 0 400 200" class="project-image">
+                            <defs>
+                                <linearGradient id="ecomGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:0.8" />
+                                    <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="100%" height="100%" fill="url(#ecomGrad)"/>
+                            <!-- Shopping cart -->
+                            <rect x="100" y="80" width="60" height="40" fill="#fff" opacity="0.9" rx="5"/>
+                            <circle cx="115" cy="135" r="8" fill="#fff" opacity="0.9"/>
+                            <circle cx="145" cy="135" r="8" fill="#fff" opacity="0.9"/>
+                            <line x1="80" y1="80" x2="100" y2="80" stroke="#fff" stroke-width="3"/>
+                            <line x1="80" y1="80" x2="85" y2="60" stroke="#fff" stroke-width="3"/>
+                            <!-- Products -->
+                            <rect x="200" y="60" width="40" height="30" fill="#fff" opacity="0.8" rx="3"/>
+                            <rect x="250" y="60" width="40" height="30" fill="#fff" opacity="0.8" rx="3"/>
+                            <rect x="300" y="60" width="40" height="30" fill="#fff" opacity="0.8" rx="3"/>
+                            <rect x="200" y="100" width="40" height="30" fill="#fff" opacity="0.8" rx="3"/>
+                            <rect x="250" y="100" width="40" height="30" fill="#fff" opacity="0.8" rx="3"/>
+                            <rect x="300" y="100" width="40" height="30" fill="#fff" opacity="0.8" rx="3"/>
+                            <!-- Connection lines -->
+                            <line x1="160" y1="100" x2="200" y2="100" stroke="#fff" stroke-width="2" stroke-dasharray="3,3"/>
+                            <text x="200" y="175" text-anchor="middle" fill="#fff" font-size="16" font-weight="bold">E-Commerce Platform</text>
+                        </svg>
+                        <div class="project-content">
+                            <h5 class="project-title">E-Commerce Platform</h5>
+                            <p class="project-description">
+                                A comprehensive e-commerce solution with modern web technologies, including product management, user authentication, shopping cart, and payment integration. Currently under development.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Database</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-primary btn-sm" disabled>
+                                    <i class="fas fa-eye me-1"></i>Live Demo
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm" disabled>
+                                    <i class="fab fa-github me-1"></i>Code
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Web Page -->
+                <div class="col-lg-4 mb-4">
+                    <div class="project-card h-100">
+                        <svg width="100%" height="200" viewBox="0 0 400 200" class="project-image">
+                            <defs>
+                                <linearGradient id="foodGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#f39c12;stop-opacity:0.8" />
+                                    <stop offset="100%" style="stop-color:#e67e22;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="100%" height="100%" fill="url(#foodGrad)"/>
+                            <!-- Plate -->
+                            <circle cx="200" cy="100" r="70" fill="#fff" opacity="0.9"/>
+                            <circle cx="200" cy="100" r="60" fill="#fff" opacity="0.7"/>
+                            <!-- Food items -->
+                            <circle cx="180" cy="85" r="15" fill="#e74c3c" opacity="0.8"/>
+                            <circle cx="220" cy="85" r="15" fill="#27ae60" opacity="0.8"/>
+                            <circle cx="200" cy="115" r="18" fill="#f39c12" opacity="0.8"/>
+                            <ellipse cx="160" cy="110" rx="12" ry="8" fill="#8e44ad" opacity="0.8"/>
+                            <ellipse cx="240" cy="110" rx="12" ry="8" fill="#3498db" opacity="0.8"/>
+                            <!-- Utensils -->
+                            <line x1="100" y1="80" x2="100" y2="120" stroke="#fff" stroke-width="3"/>
+                            <line x1="95" y1="85" x2="105" y2="85" stroke="#fff" stroke-width="2"/>
+                            <line x1="300" y1="80" x2="300" y2="120" stroke="#fff" stroke-width="3"/>
+                            <path d="M295,80 Q300,75 305,80" stroke="#fff" stroke-width="2" fill="none"/>
+                            <text x="200" y="175" text-anchor="middle" fill="#fff" font-size="16" font-weight="bold">Food Web Page</text>
+                        </svg>
+                        <div class="project-content">
+                            <h5 class="project-title">Food Web Page</h5>
+                            <p class="project-description">
+                                A responsive and visually appealing food website built with HTML, CSS, and modern layout techniques. Showcasing various food items and services with mobile-friendly interface.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">Responsive Design</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-primary btn-sm" disabled>
+                                    <i class="fas fa-eye me-1"></i>Live Demo
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm" disabled>
+                                    <i class="fab fa-github me-1"></i>Code
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Robotics Projects -->
+                <div class="col-lg-4 mb-4">
+                    <div class="project-card h-100">
+                        <svg width="100%" height="200" viewBox="0 0 400 200" class="project-image">
+                            <defs>
+                                <linearGradient id="robotGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#9b59b6;stop-opacity:0.8" />
+                                    <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="100%" height="100%" fill="url(#robotGrad)"/>
+                            <!-- Robot head -->
+                            <rect x="170" y="60" width="60" height="50" fill="#fff" opacity="0.9" rx="10"/>
+                            <circle cx="185" cy="80" r="6" fill="#007bff"/>
+                            <circle cx="215" cy="80" r="6" fill="#007bff"/>
+                            <rect x="190" y="95" width="20" height="8" fill="#333" rx="4"/>
+                            <!-- Robot body -->
+                            <rect x="160" y="110" width="80" height="60" fill="#fff" opacity="0.9" rx="15"/>
+                            <circle cx="180" cy="130" r="8" fill="#28a745"/>
+                            <circle cx="220" cy="130" r="8" fill="#e74c3c"/>
+                            <rect x="185" y="145" width="30" height="15" fill="#007bff" opacity="0.7" rx="3"/>
+                            <!-- Robot arms -->
+                            <rect x="130" y="120" width="30" height="12" fill="#fff" opacity="0.8" rx="6"/>
+                            <rect x="240" y="120" width="30" height="12" fill="#fff" opacity="0.8" rx="6"/>
+                            <!-- Gears -->
+                            <circle cx="120" cy="80" r="15" fill="#fff" opacity="0.6"/>
+                            <circle cx="280" cy="80" r="15" fill="#fff" opacity="0.6"/>
+                            <text x="200" y="190" text-anchor="middle" fill="#fff" font-size="16" font-weight="bold">Robotics Projects</text>
+                        </svg>
+                        <div class="project-content">
+                            <h5 class="project-title">Robotics Projects</h5>
+                            <p class="project-description">
+                                Various robotics projects developed during internships and coursework, focusing on automation, sensor integration, and intelligent control systems for real-world applications.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Robotics</span>
+                                <span class="tag">Arduino</span>
+                                <span class="tag">Sensors</span>
+                                <span class="tag">Automation</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-primary btn-sm" disabled>
+                                    <i class="fas fa-eye me-1"></i>Live Demo
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm" disabled>
+                                    <i class="fab fa-github me-1"></i>Code
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="mb-3">Get In Touch</h2>
+                <p class="text-muted">Let's work together on your next project</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="contact-info">
+                        <h4 class="mb-4">Let's Work Together</h4>
+                        <p class="mb-4">
+                            I'm always excited to collaborate on innovative AI and robotics projects. Whether you're interested in my surveillance system, want to discuss drone technology, or have an opportunity to share, I'd love to connect!
+                        </p>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <strong>Email</strong>
+                                <a href="mailto:mohamediqhlas19@gmail.com">mohamediqhlas19@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <strong>Phone</strong>
+                                <span>9025456450</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <strong>Location</strong>
+                                <span>Chennai, Tamil Nadu</span>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <h5 class="mb-3">Follow Me</h5>
+                            <a href="https://linkedin.com/in/mohamed-iqhlas-816455310/" class="social-link" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/Mohamediqhlas" class="social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-form">
+                        <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" class="form-control" id="name" name="name" required 
+                                       placeholder="Your full name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" class="form-control" id="email" name="email" required 
+                                       placeholder="your.email@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required 
+                                          placeholder="Tell me about your project or just say hello!"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">
+                                <i class="fas fa-paper-plane me-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5 class="mb-3">Mohamed Iqhlas A</h5>
+                    <p class="text-muted mb-3">
+                        AI & Robotics Engineering student passionate about intelligent systems, drone technology, and 
+                        building innovative solutions that shape the future.
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-muted">Home</a></li>
+                        <li><a href="#about" class="text-muted">About</a></li>
+                        <li><a href="#skills" class="text-muted">Skills</a></li>
+                        <li><a href="#projects" class="text-muted">Projects</a></li>
+                        <li><a href="#contact" class="text-muted">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="mb-3">Connect</h6>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/mohamed-iqhlas-816455310/" class="text-muted me-3" target="_blank">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <br>
+                        <a href="mailto:mohamediqhlas19@gmail.com" class="text-muted">
+                            <i class="fas fa-envelope"></i> mohamediqhlas19@gmail.com
+                        </a>
+                        <br>
+                        <span class="text-muted">
+                            <i class="fas fa-phone"></i> 9025456450
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="text-muted mb-0">© 2025 Mohamed Iqhlas A. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
