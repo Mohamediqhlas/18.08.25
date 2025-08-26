@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  background-color: #08c9bf;   
+  color: white;
+  text-align: center;
+  padding: 30px;              
+  border: 5px solid #d3cf00f6;  
+  margin: 20px;               
+  width: 150px;
+  transition: all 0.2s ease;
+}
+
+
+.controls {
+  margin: 20px auto;
+  width: 300px;
+  text-align: left;
+}
+
+.controls label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+/* Legend */
+.legend {
+  margin-top: 30px;
+  text-align: left;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.legend div {
+  margin: 8px 0;
+}
+
+.legend span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.margin { background: transparent; border: 1px dashed gray; }
+.border { background: #d35400; }
+.padding { background: #f1c40f; }
+.content { background: #3498db; }
